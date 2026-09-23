@@ -1,0 +1,1235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Diabetes Registry Database SOP">
+
+    <title>SOP | St. Helena Diabetes Registry</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="header-content">
+            <img
+                class="company-logo"
+                src="assets/digital-data-services-logo.jpg"
+                alt="Digital Data Services">
+
+            <div>
+                <p class="document-label">
+                    Standard Operating Procedure
+                </p>
+
+                <h1>SH Diabetes Registry Database</h1>
+
+                <p class="subtitle">
+                    Clear, consistent, and secure database procedures
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <div class="page-layout">
+        <aside class="sidebar">
+            <nav aria-label="SOP contents">
+                <h2>Contents</h2>
+
+                <ol>
+                    <li><a href="#information">Document information</a></li>
+                    <li><a href="#purpose">Purpose</a></li>
+                    <li><a href="#scope">Scope</a></li>
+                    <li><a href="#requirements">Requirements</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#password">Password</a></li>
+                    <li><a href="#access">Access</a></li>
+                    <li><a href="#search">Search</a></li>
+                    <li><a href="#add">Add Record</a></li>
+                    <li><a href="#baseline">Baseline</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#diagnosis">Diagnosis</a></li>
+                    <li><a href="#physical-review">Physical Review</a></li>
+                    <li><a href="#laboratory-results">Laboratory Results</a></li>
+                    <li><a href="#medication-review">Medication Review</a></li>
+                    <li><a href="#status">Status</a></li>
+                    <li><a href="#new-instance">Add Instance</a></li>
+                    <li><a href="#record-homepage">Record Home Page</a></li>
+                    <li><a href="#form-status">Form Status</a></li>
+                    <li><a href="#required-fields">Required Fields</a></li>
+                    <li><a href="#execute-rules">DQ Rules</a></li>
+                    <li><a href="#drwf">Data Resolution Workflow</a></li>                   
+                    <li><a href="#rule-violation">DQ Violation</a></li>
+                    <li><a href="#messenger">REDCap Messenger</a></li>
+                    <li><a href="#troubleshooting">Troubleshooting</a></li>
+                </ol>
+            </nav>
+        </aside>
+
+        <main>
+            <section id="information">
+                <h2>Document information</h2>
+
+                <div class="information-grid">
+                    <div>
+                        <span>SOP number</span>
+                        <strong>SOP-001</strong>
+                    </div>
+
+                    <div>
+                        <span>Version</span>
+                        <strong>1.0</strong>
+                    </div>
+
+                    <div>
+                        <span>Effective date</span>
+                        <strong>24-Sep-2026</strong>
+                    </div>
+
+                    <div>
+                        <span>Approved by</span>
+                        <strong>Enter name or position</strong>
+                    </div>
+
+                    <div>
+                        <span>Department</span>
+                        <strong>Enter department</strong>
+                    </div>
+
+                    <div>
+                        <span>Review date</span>
+                        <strong>Enter review date</strong>
+                    </div>
+
+                    <div>
+                        <span>Notes</span>
+                        <strong>Data displayed are TEST (not real) data</strong>
+                    </div>
+                </div>
+            </section>
+
+            <section id="purpose">
+                <p class="section-number">01</p>
+                <h2>Purpose</h2>
+
+                <p>
+                    This standard operating procedure (SOP) was developed
+                    to be used in conjunction with the REDCap database for
+                    the St. Helena diabetes registry.
+                    This SOP will help users to enter and manage
+                    registry data.                    
+                </p>
+            </section>
+
+            <section id="scope">
+                <p class="section-number">02</p>
+                <h2>Scope</h2>
+
+                <p>
+                    All persons using the diabetes registry database
+                    should use this SOP.
+                </p>
+            </section>
+
+            <section id="requirements">
+                <p class="section-number">03</p>
+                <h2>Requirements</h2>
+
+                <ul class="checklist">
+                    <li>Active REDCap user account</li>
+                    <li>Access to the diabetes registry database</li>
+                    <li>Internet access</li>
+                    <li>Any necessary approvals</li>
+                </ul>
+            </section>
+
+            <section id="login">
+                <p class="section-number">04</p>
+                <h2>How to log into REDCap</h2>
+
+                <ol class="instructions">
+                    <li>Open a web browser, e.g. Google Chrome, Microsoft Edge, etc.</li>
+                    <li>In the URL box, type https://caribdata.org/redcap.</li>
+                    <li>On the login page, enter your username and password</li>
+                    <li>Click <strong>Login</strong>.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/login.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/login.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 1. Login screen.
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/login.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    Do not share your username or password with
+                    another person.
+                </div>
+            </section>
+
+            <section id="password">
+                <p class="section-number">05</p>
+                <h2>How to reset your REDCap password</h2>
+
+                <ol class="instructions">
+                    <li>On the login page, click <strong>Forgot your password?</strong>.</li>
+                    <li>Enter your username.</li>
+                    <li>Click 'Send password reset email'.</li>
+                    <li>Check your email for the automated email from the REDCap system.</li>
+                    <li>Click the link 'Setup your new REDCap password' in the email.</li>
+                    <li>A browser will open, enter and re-enter your password.</li>
+                    <li>Click, <strong>Submit</strong>.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/password.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/password.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 2. Password reset.
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/password.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    Do not share your username or password with
+                    another person.
+                </div>
+            </section>
+
+            <section id="access">
+                <p class="section-number">06</p>
+                <h2>How to access the database</h2>
+
+                <details>
+                    <summary>Option 1: Email</summary>
+                    <p>
+                        The REDCap system will send an automated
+                        email when you have been added to a project.
+                        The link in the email will prompt you to log
+                        into REDCap and will display the project.
+                    </p>
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="images/access-myprojects-static.webp">
+
+                        <source
+                            src="videos/access-email.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support embedded video.
+                        You can
+                        <a href="videos/access-email.mp4">
+                            download the MP4 video
+                        </a>.
+                    </video>
+
+                        <figcaption>
+                            Video 3. Email
+                        </figcaption>
+
+                    <p class="media-link">
+                        <a href="videos/access-email.mp4" download>
+                            Download this video
+                        </a>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Option 2: My Projects</summary>
+                    <p>
+                        Once logged into REDCap, click on 'My Projects'
+                        page and the project(s) you have been added to
+                        will displayed on this page.
+                        </p>
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="images/access-myprojects-static.webp">
+
+                        <source
+                            src="videos/access-myprojects.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support embedded video.
+                        You can
+                        <a href="videos/access-myprojects.mp4">
+                            download the MP4 video
+                        </a>.
+                    </video>
+
+                        <figcaption>
+                            Video 4. My Projects
+                        </figcaption>
+
+                    <p class="media-link">
+                        <a href="videos/access-myprojects.mp4" download>
+                            Download this video
+                        </a>
+                    </p>
+                </details>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    With REDCap, the terms 'project' and 'database' can be used interchangeably.
+                </div>
+            </section>
+
+            <section id="search">
+                <p class="section-number">07</p>
+                <h2>How to search the database</h2>
+
+                <ol class="instructions">
+                    <li>Once logged into the project, click <strong>Add / Edit Records</strong>.</li>
+                    <li>In 'Data Search', select field to search by, e.g. First Name</li>
+                    <li>In 'Search query', enter value, e.g. michelle or henry.</li>
+                    <li>All possible matches will be listed.</li>
+                    <li>If no matches, then nothing will be listed.</li>
+                    <li>Select if the possible match is opened in 'Data Entry Form' or 'Record Home Page'.</li>
+                    <li>Click on the match in the list to open the record.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/search.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/search.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 5. Search database.
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/search.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                        <ul style="list-style-type: square;">
+                            <li>Search query is not case sensitive.</li>
+                            <li>Searching the database BEFORE you add a new record is important to prevent duplicates.</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section id="add">
+                <p class="section-number">08</p>
+                <h2>How to add a new record</h2>
+
+                <details>
+                    <summary>Option 1: Add / Edit Records</summary>
+                    <p>
+                        Once logged into project, click 'Add / Edit Records'.
+                        Click green button: '+ Add new record'.
+                    </p>
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="images/access-myprojects-static.webp">
+
+                        <source
+                            src="videos/add-record.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support embedded video.
+                        You can
+                        <a href="videos/add-record.mp4">
+                            download the MP4 video
+                        </a>.
+                    </video>
+
+                        <figcaption>
+                            Video 6. Add / Edit Records
+                        </figcaption>
+
+                    <p class="media-link">
+                        <a href="videos/add-record.mp4" download>
+                            Download this video
+                        </a>
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Option 2: Record Status Dashboard</summary>
+                    <p>
+                        Once logged into project, click 'Record Status Dashboard'.
+                        Click green button: '+ Add new record'.
+                    </p>
+                    <video
+                        controls
+                        preload="metadata"
+                        poster="images/access-myprojects-static.webp">
+
+                        <source
+                            src="videos/record-dashboard.mp4"
+                            type="video/mp4">
+
+                        Your browser does not support embedded video.
+                        You can
+                        <a href="videos/record-dashboard.mp4">
+                            download the MP4 video
+                        </a>.
+                    </video>
+
+                        <figcaption>
+                            Video 7. Record Status Dashobard
+                        </figcaption>
+
+                    <p class="media-link">
+                        <a href="videos/record-dashboard.mp4" download>
+                            Download this video
+                        </a>
+                    </p>
+                </details>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    Both options will open the new record in the 'Record Home Page' view.
+                </div>
+            </section>
+
+            <section id="baseline">
+                <p class="section-number">09</p>
+                <h2>How to complete Baseline</h2>
+
+                <ol class="instructions">
+                    <li>Click on 'Baseline' in Record Home Page of a new record.</li>
+                    <li>Enter values into the fields</li>
+                    <li>There are several options for saving:</li>
+                </ol>
+
+                <details>
+                    <summary>Save & Stay</summary>
+                    <p>
+                        Remains in current form.
+                    </p>
+                </details>
+                <details>
+                    <summary>Save & Exit Form</summary>
+                    <p>
+                        Exits current form and returns to Record Home Page.
+                    </p>
+                </details>
+                <details>
+                    <summary>Save & Go To Next Form</summary>
+                    <p>
+                        Exits current form and opens next sequential form of the same record.
+                    </p>
+                </details>
+                <details>
+                    <summary>Save & Exit Record</summary>
+                    <p>
+                        Exits current record and navigates to Add / Edit Records page.
+                    </p>
+                </details>
+                <details>
+                    <summary>Save & Go To Next Record</summary>
+                    <p>
+                        Exits current record and opens next sequential record's Record Home Page.
+                        If in last record of database then exits current record and opens a new record's Record Home Page.
+                    </p>
+                </details>
+                <details>
+                    <summary>Save & Go To Next Instance/Add New Instance</summary>
+                    <p>
+                        Exits current record of a REPEATING form and opens next sequential instance of this form.
+                        If in last instance then the option to 'Save & Add New Instance' will be displayed.
+                    </p>
+                </details>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/baseline.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/baseline.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 8. Baseline form
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/baseline.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    Some fields are read-only as they are either: 
+                        <ul style="list-style-type: square;">
+                            <li>system-generated by REDCap (e.g. Registry record key) or</li>
+                            <li>auto-calculated (e.g. Age at date of baseline data entry)</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section id="contact">
+                <p class="section-number">10</p>
+                <h2>How to complete Contact</h2>
+
+                <ol class="instructions">
+                    <li>Click on 'Contact' in Record Home Page of the record.</li>
+                    <li>Enter values into the fields and save.</li>
+                    <li>To add a new instance at another date, either:</li>
+                        <ul style="list-style-type: square;">
+                            <li>click grey plus sign '+' button next to this form on the Record Home Page;</li>
+                            <li>click grey '+ Add new' button in the Repeating instruments grid on the Record Home Page;</li>
+                            <li>in the last instance of the Contact form, click 'Save & Add New Instance'.</li>
+                        </ul>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/contact.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/contact.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 9. Contact form
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/contact.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                        <ul style="list-style-type: square;">
+                            <li>In REDCap, the terms 'instrument' and 'form' and 'page' may be used interchangeably.</li>
+                            <li>Repeating instruments are forms that can be entered multiple times, i.e. longitudinal data collection</li>
+                                <ul style="list-style-type: square;">
+                                    <li>All forms EXCEPT baseline are repeating instruments</li>
+                                </ul>
+                            <li>Some forms, e.g. Contact, copies unchanging data (e.g. patient name) over from one instance into the other.</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section id="diagnosis">
+                <p class="section-number">11</p>
+                <h2>How to complete Diagnosis</h2>
+
+                <ol class="instructions">
+                    <li>Click on 'Diagnosis' in Record Home Page of the record.</li>
+                    <li>Enter values into the fields and save.</li>
+                    <li>If a full diagnosis date is not available then other fields will be unhidden (see video demo below).</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/diagnosis.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/diagnosis.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 10. Diagnosis form
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/diagnosis.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    In REDCap, the button 'reset' allows you to undo selected options in fields with radio buttons.
+                </div>
+            </section>
+
+            <section id="physical-review">
+                <p class="section-number">12</p>
+                <h2>How to complete Physical Review</h2>
+
+                <ol class="instructions">
+                    <li>Click on 'Physical Review' in Record Home Page of the record.</li>
+                    <li>Enter values into the fields and save.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/physical-review.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/physical-review.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 11. Physical Review form
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/physical-review.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    The field 'Visit Frequency' on this form copies data from a later form so on first data entry this will remain blank/missing.
+                </div>
+            </section>
+
+            <section id="laboratory-results">
+                <p class="section-number">13</p>
+                <h2>How to complete Laboratory Results</h2>
+
+                <ol class="instructions">
+                    <li>Click on 'Laboratory Results' in Record Home Page of the record.</li>
+                    <li>Enter values into the fields and save.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/lab-results.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/lab-results.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 12. Laboratory Results form
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/lab-results.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    Since lab reference ranges can differ based on sex, the auto-calculated ranges for the Hi/Lo flags will differ whether the patient is male or female.
+                </div>
+            </section>
+
+            <section id="medication-review">
+                <p class="section-number">14</p>
+                <h2>How to complete Medication Review</h2>
+
+                <ol class="instructions">
+                    <li>Click on 'Medication Review' in Record Home Page of the record.</li>
+                    <li>Enter values into the fields and save.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/meds-review.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/meds-review.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 13. Medication Review form
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/meds-review.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    You can document up to 15 different medications.
+                </div>
+            </section>
+
+            <section id="status">
+                <p class="section-number">15</p>
+                <h2>How to complete Status</h2>
+
+                <ol class="instructions">
+                    <li>Click on 'Status' in Record Home Page of the record.</li>
+                    <li>Select whether the patient is alive or deceased and save.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/status.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/status.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 14. Status form
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/status.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    Most of the fields on this form are auto-generated by the database, e.g. Date of next visit which is based on 'Visit Frequency'.
+                </div>
+            </section>
+
+            <section id="new-instance">
+                <p class="section-number">16</p>
+                <h2>How to add a new instance</h2>
+
+                <ol class="instructions">
+                    <li>All forms EXCEPT baseline are repeating instruments.</li>
+                    <li>To add a new instance at another date, either:</li>
+                        <ul style="list-style-type: square;">
+                            <li>click grey plus sign '+' button next to this form on the Record Home Page;</li>
+                            <li>click grey '+ Add new' button in the Repeating instruments grid on the Record Home Page;</li>
+                            <li>in the last instance of the Contact form, click 'Save & Add New Instance'.</li>
+                        </ul>
+                    <li>The below video demonstrates how to add instances for the below forms:</li>
+                        <ul style="list-style-type: square;">
+                            <li>Physical Review</li>
+                            <li>Laboratory Results</li>
+                            <li>Medication Review</li>
+                            <li>Status</li>
+                        </ul>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/new-instance.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/new-instance.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 15. Adding new instances
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/new-instance.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    The 'Repeating Instruments' grid in Record Home Page shows all the instances for each form with a customised label for each instance.
+                </div>
+            </section>
+
+            <section id="form-status">
+                <p class="section-number">17</p>
+                <h2>How to use the Form Status</h2>
+
+                <ol class="instructions">
+                    <li>At the end of ALL forms, there is the field 'Form Status' whose default value = Incomplete.</li>
+                    <li>These options are colour-coded and correspond with the legend for status icons on the Record Home Page.</li>
+                    <li>The options should be used as follows:</li>
+                    <details>
+                        <summary>Incomplete</summary>
+                        <p>
+                            Required fields in the form have not been completed.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Unverified</summary>
+                        <p>
+                            All required fields in the form have been completed.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Complete</summary>
+                        <p>
+                            Form has been reviewed by SI/JPD/SI.
+                        </p>
+                    </details>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/form-status.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/form-status.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 16. Form Status
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/form-status.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                    The colour-coding of form status is consistent throughout the project.
+                </div>
+            </section>
+
+            <section id="required-fields">
+                <p class="section-number">18</p>
+                <h2>Saving a record with blank/missing required fields</h2>
+
+                <ol class="instructions">
+                    <li>The system will prompt you to enter data into required fields if blank/missing on saving the record.</li>
+                    <li>The options should be used as follows:</li>
+                    <details>
+                        <summary>Okay</summary>
+                        <p>
+                            Saves and remains on the form.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Ignore and leave record</summary>
+                        <p>
+                            Saves record and navigates to Add / Edit Records page.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>Ignore and go to next form</summary>
+                        <p>
+                            Saves form and navigates to next sequential form of the same record.
+                        </p>
+                    </details>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/required-fields.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/required-fields.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 17. Required Fields
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/required-fields.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                        <ul style="list-style-type: square;">
+                            <li>Required fields are identified with '*must provide value' in red font under the field.</li>
+                            <li>If requried fields are blank/missing then the Form Status should = Incomplete.</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section id="execute-rules">
+                <p class="section-number">19</p>
+                <h2>How to execute data quality (DQ) rules</h2>
+
+                <ol class="instructions">
+                    <li>Under Applications on the left of your project, click 'Data Quality'.</li>
+                    <li>The options to execute/run DQ rules are as follows:</li>
+                    <details>
+                        <summary>All</summary>
+                        <p>
+                            Executes both the built-in (rules A-I) and custom rules. Can take long to run.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>All except A&B</summary>
+                        <p>
+                            Executes both the built-in and custom rules but excludes the built-in rules for blank values.
+                        </p>
+                    </details>
+                    <details>
+                        <summary>All custom</summary>
+                        <p>
+                            Executes only the custom rules, i.e. the rules that are manually written into the DQ module (rules # 1 onwards).
+                        </p>
+                    </details>
+                    <li>Once records are flagged with discrepancies, a query can be opened and assigned via the Data Resolution Workflow (DRWF) feature within the DQ module:</li>
+                        <ul style="list-style-type: square;">
+                            <li>click 'view' which appears after the numeric value in red indicating number of discrepancies found;</li>
+                            <li>click '...comments' next to the discrepancy to open DRWF;</li>
+                            <li>assign the query to the relevant user, notify them via email or REDCap Messenger and add comments.</li>
+                        </ul>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/execute-rules.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/execute-rules.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 18. Data Quality rules
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/execute-rules.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                        <ul style="list-style-type: square;">
+                            <li>Tiered access to the Data Quality (DQ) module is assigned via User Rights.</li>
+                            <li>The DQ module is used in conjunction with the Data Resolution Workflow (DRWF).</li>
+                            <li>See the next section for guidance on how to correct discrepancies via DRWF.</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section id="drwf">
+                <p class="section-number">20</p>
+                <h2>How to correct data via Data Resolution Workflow</h2>
+
+                <ol class="instructions">
+                    <li>Under Applications on the left of your project, click 'Resolve Issues'.</li>
+                    <li>If query was notified via REDCap Messenger, then you can also view it there (see video demo).</li>
+                    <li>Once data queries have been opened, a list of all unresolved issues will appear in DRWF:</li>
+                        <ul style="list-style-type: square;">
+                            <li>click '...comment' to view details of the issue;</li>
+                            <li>click the ID number under the column 'Record' to open the record;</li>
+                            <li>correct the issue and click 'Save & Stay'.</li>
+                            <li>the comment bubble next to the field allows you to access and respond to the DRWF query (see video below).</li>
+                            <li>alternatively, return to DRWF and update the query to indicate it has been corrected.</li>
+                        </ul>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/drwf.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/drwf.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 19. Data Resolution Workflow
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/drwf.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                        <ul style="list-style-type: square;">
+                            <li>Tiered access to DRWF module is assigned via User Rights.</li>
+                            <li>You can also access DRWF via the email link with the opened query assigned to you.</li>
+                            <li>See the next section for guidance on how to open a query for the data manager, clinician, etc. via DRWF.</li>
+                        </ul>
+                </div>
+            </section>
+
+            <section id="rule-violation">
+                <p class="section-number">21</p>
+                <h2>Saving a record with a data quality rule violation</h2>
+
+                <ol class="instructions">
+                    <li>If a rule is violated, a message will appear on saving the form.</li>
+                    <li>If unsure how to correct issue, open query for the relevant team member via the DRWF comment option.</li>
+                    <li>Different members will be assigned to the below roles within the database:</li>
+                        <ul style="list-style-type: square;">
+                            <li>Data Officer</li>
+                            <li>Diabetes Clinician</li>
+                            <li>Diabetes/Community Nursing Team</li>
+                            <li>Laboratory Lead</li>
+                            <li>Pharmacy Lead</li>
+                            <li>Public Health Lead</li>
+                            <li>Registry/Data Lead</li>
+                        </ul>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/violation.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/violation.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 20. Data Rule Violation
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/violation.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                        If possible, always correct the issue instead of having to open a query in DRWF.
+                </div>
+            </section>
+
+            <section id="messenger">
+                <p class="section-number">22</p>
+                <h2>Overview of REDCap Messenger</h2>
+
+                <ol class="instructions">
+                    <li>REDCap Messenger provides a secure and confidential way to communicate with other team members.</li>
+                    <li>Examples of scenarios are listed below (this list is not all-encompassing):</li>
+                        <ul style="list-style-type: square;">
+                            <li>To assign queries via DRWF</li>
+                            <li>To ask a query that is NOT record/field-specific</li>
+                            <li>To liaise with a team member outside of the registry who has a REDCap user account</li>
+                        </ul>
+                    <li>The video demo uses the example of a patient in the registry who is interested in the TMR programme.</li>
+                </ol>
+
+                <video
+                    controls
+                    preload="metadata"
+                    poster="images/access-myprojects-static.webp">
+
+                    <source
+                        src="videos/messenger.mp4"
+                        type="video/mp4">
+
+                    Your browser does not support embedded video.
+                    You can
+                    <a href="videos/messenger.mp4">
+                        download the MP4 video
+                    </a>.
+                </video>
+
+                    <figcaption>
+                        Video 21. REDCap Messenger
+                    </figcaption>
+
+                <p class="media-link">
+                    <a href="videos/messenger.mp4" download>
+                        Download this video
+                    </a>
+                </p>
+
+                <div class="note">
+                    <strong>Note:</strong>
+                        If a query is record and field specific, use DRWF to ask the query NOT Messenger.
+                </div>
+            </section>
+
+            <section id="troubleshooting">
+                <p class="section-number">23</p>
+                <h2>Troubleshooting</h2>
+
+                <details>
+                    <summary>Cannot remember password</summary>
+                    <p>
+                        See the section on this page entitled <a href="#password">'Password'</a>
+                        to see how to reset your password.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Unsure which person to assign the query</summary>
+                    <p>
+                        See all database roles in the section <a href="#rule-violation">'DQ Violation'</a>.
+                    </p>
+                </details>
+            </section>
+
+            <aside class="warning">
+                <h2>Information security</h2>
+
+                <p>
+                    Do not place passwords, personal information,
+                    patient information, confidential records, or
+                    API credentials in screenshots or videos.
+                </p>
+
+                <p>
+                    Do not share confidential or sensitive patient information
+                    via email or WhatsApp or any other unsecured messaging app. 
+                    Use DRWF / REDCap Messenger.
+                </p>
+            </aside>
+        </main>
+    </div>
+
+    <footer>
+        <img
+            src="assets/digital-data-services-logo.jpg"
+            alt="Digital Data Services">
+
+        <p>
+            © 2026 Digital Data Services. All rights reserved.
+        </p>
+    </footer>
+</body>
+</html>
